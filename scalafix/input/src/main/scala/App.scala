@@ -1,3 +1,6 @@
+/*
+rule = "scala:fix.Akkadocs_v1"
+*/
 import java.io.File
 import java.util.UUID
 
@@ -8,11 +11,11 @@ import akka.http.scaladsl.server.Directives
 import akka.stream.scaladsl.{Flow, Sink, Source}
 import akka.{Done, NotUsed}
 
-import cache.openapi
 import spray.json.{DefaultJsonProtocol, RootJsonFormat}
 
 import scala.concurrent.Future
 
+class openapi extends annotation.StaticAnnotation
 
 object PersonRepo extends DefaultJsonProtocol with SprayJsonSupport {
   import app.domain.{Person, Pet}
