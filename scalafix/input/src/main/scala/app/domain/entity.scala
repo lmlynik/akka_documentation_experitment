@@ -1,3 +1,6 @@
+/*
+rule = "scala:fix.Akkadocs_v1"
+*/
 package app.domain
 
 
